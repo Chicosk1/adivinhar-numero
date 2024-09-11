@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 int main() {
     // Declaração inicial de váriaveis e funções para randomizar o número
@@ -7,7 +8,7 @@ int main() {
     srand(epoch);
     int numeroAleatorio = rand();
     int numeroSecreto = numeroAleatorio % 100; 
-    int tentativaAtual = 1, ganhou = 0, chute;
+    int tentativaAtual = 1, chute;
     double pontuacaoFinal = 1000, pontuacaoPerdida = 0;
 
     printf("----------------------------------------\n");
